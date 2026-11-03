@@ -31,7 +31,8 @@ import {
   Radio,
   Server,
   Binary,
-  LifeBuoy
+  LifeBuoy,
+  Video,
 } from 'lucide-react';
 
 export interface ServiceMeta {
@@ -66,6 +67,14 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     featuredDesc: 'Transform disconnected enterprise databases and documents into high-accuracy agentic knowledge engines.',
     featuredTag: 'Enterprise Ready',
     services: [
+      {
+        title: 'Video Services & Demos',
+        slug: 'video-services',
+        categoryKey: 'ai-data-engineering',
+        categoryTitle: 'AI & Data Engineering',
+        shortDesc: 'Architecture walkthroughs, video teardowns & embedded engineering masterclasses.',
+        iconName: 'Video',
+      },
       {
         title: 'Generative AI Solutions',
         slug: 'generative-ai-solutions',

@@ -33,6 +33,7 @@ import {
   Factory,
   Car,
   Hotel,
+  Video,
   UserCheck
 } from 'lucide-react';
 
@@ -69,7 +70,7 @@ const navItems = [
         links: [
           { name: 'Digital Product Engineering', desc: 'End-to-end fullstack development', icon: Code2, href: '/services/digital-product-engineering' },
           { name: 'Cloud & DevOps Architecture', desc: 'AWS Premier & Multi-cloud scale', icon: Cloud, href: '/services/cloud-devops-architecture' },
-          { name: 'Legacy Modernization', desc: 'Microservices & event-driven systems', icon: Layers, href: '/services/legacy-modernization' },
+          { name: 'Video Services & Demos', desc: 'Architecture walkthroughs & video teardowns', icon: Video, href: '/services/video-services' },
           { name: 'View All Practices', desc: 'Explore all engineering services', icon: Globe, href: '/services' },
         ]
       }
@@ -158,7 +159,7 @@ const navItems = [
       {
         title: 'Knowledge Base',
         links: [
-          { name: 'Client Case Studies', desc: 'Measurable enterprise ROI stories', icon: Briefcase, href: '/resources/case-studies' },
+          { name: 'Client Case Studies', desc: 'Measurable enterprise ROI stories', icon: Briefcase, href: '/case-study' },
           { name: 'Engineering Blog', desc: 'In-depth technical architecture articles', icon: BookOpen, href: '/resources/blog' },
         ]
       }
@@ -375,6 +376,14 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                 )}
               </div>
             ))}
+
+            {/* Direct Case Studies Link */}
+            <Link
+              href="/case-study"
+              className="inline-flex items-center px-3 py-2 text-[14px] font-medium text-white/90 hover:text-[#F2E6A7] hover:bg-white/5 transition-colors duration-200 rounded-md cursor-pointer"
+            >
+              Case Studies
+            </Link>
           </nav>
 
           {/* Right Action Button - Contact Us */}
@@ -422,6 +431,17 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                       <div className="text-[11px] font-bold text-[#F2E6A7] uppercase tracking-wider px-1">
                         6 Practices • 32 Services
                       </div>
+                      <Link
+                        href="/services/video-services"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center justify-between text-[13px] font-semibold text-[#F2E6A7] bg-[#082a20] hover:bg-[#124b3b] p-2.5 rounded-xl border border-[#33A685]/60 transition-colors"
+                      >
+                        <span className="flex items-center gap-2">
+                          <Video className="w-4 h-4 text-[#42CF9F]" />
+                          <span>Video Services &amp; Architecture Demos</span>
+                        </span>
+                        <span className="text-[10px] bg-[#33A685] text-white px-1.5 py-0.5 rounded font-bold">New</span>
+                      </Link>
                       {SERVICE_CATEGORIES.map((cat) => {
                         const isCatOpen = mobileCategoryOpen === cat.key;
                         return (
@@ -503,6 +523,16 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                 )}
               </div>
             ))}
+            <div className="border-b border-[#33A685]/20 pb-3">
+              <Link
+                href="/case-study"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-between w-full text-left text-[15px] font-medium text-white py-2"
+              >
+                <span>Case Studies</span>
+                <ArrowRight className="w-4 h-4 text-[#33A685]" />
+              </Link>
+            </div>
             <div className="pt-2">
               <Link
                 href="/contact"

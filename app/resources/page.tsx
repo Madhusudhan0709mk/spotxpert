@@ -47,7 +47,7 @@ export default function ResourcesIndexPage() {
           {/* Quick Hub Navigation Cards */}
           <div className="mt-12 max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
             <Link
-              href="/resources/case-studies"
+              href="/case-study"
               className="p-6 rounded-3xl bg-white border border-[#B4D9C4] hover:border-[#33A685] transition-all shadow-xs group"
             >
               <div className="w-10 h-10 rounded-xl bg-[#0E4032] text-[#F2E6A7] flex items-center justify-center mb-4">
@@ -97,7 +97,7 @@ export default function ResourcesIndexPage() {
             </h2>
           </div>
           <Link
-            href="/resources/case-studies"
+            href="/case-study"
             className="text-xs sm:text-sm font-bold text-[#33A685] hover:text-[#0E4032] flex items-center gap-1.5"
           >
             <span>View all case studies</span>
@@ -143,7 +143,7 @@ export default function ResourcesIndexPage() {
                 </div>
 
                 <Link
-                  href="/resources/case-studies"
+                  href="/case-study"
                   className="text-xs font-bold text-[#33A685] hover:text-[#0E4032] flex items-center gap-1 pt-2"
                 >
                   <span>Read full case study architecture &rarr;</span>

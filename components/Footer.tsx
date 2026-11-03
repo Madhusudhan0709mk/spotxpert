@@ -72,6 +72,7 @@ export default function Footer({ onOpenConsultation: _onOpenConsultation }: Foot
               <li><Link href="/services/cloud-devops-engineering" className="hover:text-[#F2E6A7] transition-colors">Cloud &amp; DevOps Engineering</Link></li>
               <li><Link href="/services/enterprise-ai-strategy-roadmapping" className="hover:text-[#F2E6A7] transition-colors">Enterprise AI Strategy</Link></li>
               <li><Link href="/services/business-process-automation" className="hover:text-[#F2E6A7] transition-colors">Process Automation</Link></li>
+              <li><Link href="/services/video-services" className="text-[#F2E6A7] hover:underline transition-colors flex items-center gap-1 font-medium">Video Architecture Series</Link></li>
               <li><Link href="/services" className="text-[#42CF9F] font-semibold hover:text-[#F2E6A7] transition-colors flex items-center gap-1 pt-1">Explore All 32 Services →</Link></li>
             </ul>
           </div>
@@ -110,6 +111,7 @@ export default function Footer({ onOpenConsultation: _onOpenConsultation }: Foot
           </div>
           <div className="flex flex-wrap items-center gap-6">
             <Link href="/contact" className="text-[#33A685] hover:text-[#F2E6A7] font-semibold transition-colors">Contact Us</Link>
+            <Link href="/case-study" className="text-[#F2E6A7] hover:underline font-medium transition-colors">Case Studies</Link>
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
             <Link href="/security-compliance" className="hover:text-white transition-colors">Security &amp; Compliance</Link>

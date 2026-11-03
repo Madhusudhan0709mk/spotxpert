@@ -20,6 +20,7 @@ import {
   CheckCircle2,
   Search,
   Filter,
+  Video,
 } from 'lucide-react';
 
 export default function ServicesDirectoryPage() {
@@ -71,12 +72,19 @@ export default function ServicesDirectoryPage() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <button
-              onClick={() => setIsConsultationOpen(true)}
+            <Link
+              href="/contact"
               className="bg-[#33A685] hover:bg-[#299576] active:bg-[#208064] text-white font-semibold px-8 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer text-sm"
             >
               Book An Architecture Consultation
-            </button>
+            </Link>
+            <Link
+              href="/services/video-services"
+              className="bg-[#082a20] hover:bg-[#124b3b] text-[#F2E6A7] border border-[#33A685]/70 font-semibold px-6 py-3.5 rounded-lg transition-all text-sm inline-flex items-center gap-2"
+            >
+              <Video className="w-4 h-4 text-[#42CF9F]" />
+              <span>Watch Video Services &amp; Demos</span>
+            </Link>
             <a
               href="#services-catalog"
               className="bg-transparent hover:bg-white/10 text-white border border-[#33A685]/60 font-semibold px-6 py-3.5 rounded-lg transition-all text-sm"
@@ -89,6 +97,34 @@ export default function ServicesDirectoryPage() {
 
       {/* 3. Filter Bar & Search */}
       <section id="services-catalog" className="pt-12 pb-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Spotlight: Video Services Callout Banner */}
+        <div className="mb-8 p-5 sm:p-6 bg-[#0E4032] text-white rounded-2xl border border-[#33A685]/50 flex flex-col md:flex-row items-start md:items-center justify-between gap-5 shadow-lg">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-[#082820] border border-[#33A685]/60 flex items-center justify-center flex-shrink-0 text-[#F2E6A7]">
+              <Video className="w-6 h-6 text-[#42CF9F]" />
+            </div>
+            <div>
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#42CF9F] mb-1">
+                <span>Featured Video Series</span>
+                <span className="bg-[#F2E6A7] text-[#0E4032] text-[10px] px-2 py-0.5 rounded-full font-bold">New</span>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-white">
+                Technical Architecture Walkthroughs &amp; Systems Teardowns
+              </h3>
+              <p className="text-xs sm:text-sm text-[#B4D9C4] mt-1 max-w-2xl leading-relaxed">
+                Watch 20+ in-depth video blueprints covering autonomous agent workflows, hybrid RAG, zero-trust Kubernetes, and real-time streaming lakehouses.
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/services/video-services"
+            className="bg-[#33A685] hover:bg-[#288f72] text-white text-xs font-semibold px-5 py-3 rounded-xl whitespace-nowrap transition-all shadow-md inline-flex items-center gap-2 flex-shrink-0"
+          >
+            <span>Explore Video Services</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
         <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 pb-6 border-b border-[#B4D9C4]/60">
           {/* Search Box */}
           <div className="relative flex-1 max-w-md">
