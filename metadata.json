@@ -1,0 +1,6 @@
+{
+  "name": "Simform - AI-Native Engineering For Digital Products & Enterprise Solutions",
+  "description": "Simform helps high-growth startups and enterprises architect, build, and scale next-generation digital products and AI-native software solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
