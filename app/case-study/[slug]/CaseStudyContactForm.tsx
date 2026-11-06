@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { ContactLead } from '@/src/data/case-studies-data';
 import { Phone, Check, Send } from 'lucide-react';
 
@@ -126,32 +125,17 @@ export default function CaseStudyContactForm({ contactLead }: Props) {
           )}
         </div>
 
-        {/* Right Side: Lead Executive Profile matching structure with brand palette */}
+        {/* Right Side: Consultation Information */}
         <div className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left lg:border-l lg:border-[#33A685]/30 lg:pl-10">
-          <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 border-[#33A685] shadow-xl mb-4 bg-[#082820]">
-            <Image
-              src={contactLead.avatar}
-              alt={contactLead.name}
-              fill
-              className="object-cover"
-              sizes="112px"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-
-          <h4 className="text-xl font-bold text-white mb-1">
-            {contactLead.name}
-          </h4>
-
-          <p className="text-xs text-[#B4D9C4] leading-relaxed mb-6 max-w-xs font-normal">
+          <p className="text-sm text-[#B4D9C4] leading-relaxed mb-6 max-w-sm font-normal">
             {contactLead.description}
           </p>
 
           <a
             href={`tel:${contactLead.phone}`}
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#F2E6A7] hover:text-white uppercase tracking-wider bg-[#082820] hover:bg-[#33A685] border border-[#33A685] px-5 py-2.5 rounded-lg transition-colors shadow-md cursor-pointer"
+            className="inline-flex items-center gap-2 text-xs font-bold text-[#F2E6A7] hover:text-white uppercase tracking-wider bg-[#082820] hover:bg-[#33A685] border border-[#33A685] px-6 py-3 rounded-xl transition-colors shadow-md cursor-pointer"
           >
-            <Phone className="w-3.5 h-3.5 text-[#33A685] group-hover:text-white" />
+            <Phone className="w-4 h-4 text-[#33A685] group-hover:text-white" />
             <span>CALL US NOW</span>
           </a>
         </div>

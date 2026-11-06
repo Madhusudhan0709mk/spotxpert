@@ -77,6 +77,136 @@ export interface CaseStudyItem {
 
 export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   {
+    id: '3d-toy-manufacturer-scales-revenue-operations-saving-160-hours-a-month-with-claude',
+    slug: '3d-toy-manufacturer-scales-revenue-operations-saving-160-hours-a-month-with-claude',
+    title: '3D Toy Manufacturer Scales Revenue Operations, Saving 160 Hours a Month with Claude',
+    excerpt:
+      'Built a revenue operations app for a 3D toy manufacturer on Claude, qualifying inbound leads, routing them automatically, and generating delivery invoices while saving 160 hours monthly.',
+    categoryTags: ['Manufacturing', 'Revenue Operations', 'Claude AI'],
+    offering: 'AI/ML Engineering',
+    industry: 'Manufacturing',
+    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+    heroBadge: 'Manufacturing',
+    heroSubheadline:
+      'Built a revenue operations app for a 3D toy manufacturer. It qualifies inbound leads, routes them to the team, and generates invoices automatically after delivery, with human review built in.',
+    metrics: [
+      {
+        value: '1,000+',
+        label: 'Leads handled per month',
+      },
+      {
+        value: '100+',
+        label: 'Invoices automated per month',
+      },
+      {
+        value: '160 hrs',
+        label: 'Saved per month (~40 hrs every week)',
+      },
+    ],
+    clientOverview: {
+      clientName: 'Shadowfax 3D',
+      industry: 'Manufacturing',
+      companySize: '10–50 employees',
+      product: 'Custom 3D-Printed Toy Design & Production',
+      location: 'Bengaluru, India',
+      description:
+        'A high-growth 3D toy manufacturer specializing in bespoke articulated figures and rapid prototyping. Their operational constraint was not 3D printing throughput, but the manual paperwork surrounding inbound lead triage, customer quotation, and post-delivery invoicing.',
+      dashboardImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
+    },
+    challenges: {
+      intro:
+        "A growing toy manufacturer's biggest constraint was not production but the paperwork around it. For this 3D toy maker, the challenge was that every lead and invoice depended on a small team doing the work by hand, and growth only made it worse.",
+      cards: [
+        {
+          title: 'Revenue operations ran on manual work',
+          description:
+            "Leads arrived from the website and were sorted, followed up, and recorded by hand. Invoices were created one at a time once an order shipped. Each step was manageable on its own. Together they took up a large part of the team's week and left little room for anything else.",
+        },
+        {
+          title: 'The process could not scale',
+          description:
+            'Every new order or enquiry meant more manual effort. Growing sales meant hiring more people just to keep up with admin, and the cost of that grew as fast as revenue. A team of 10 to 50 could not afford to scale that way.',
+        },
+        {
+          title: 'A small team became the bottleneck',
+          description:
+            'Lead qualification and invoicing sat with a few people. When they were busy, enquiries waited and invoices went out late. That slowed response times, delayed payments, and pulled the team away from operations and growth.',
+        },
+      ],
+    },
+    solution: {
+      intro:
+        "We built a multi-revenue operations app on Claude, integrated server-side through Anthropic's Python SDK. One system covers the full revenue cycle. It qualifies inbound leads from the web and, once a product is delivered, generates the invoice automatically. A shared layer underneath handles validation, review, and notifications, so the team only steps in where judgment is needed.",
+      cards: [
+        {
+          title: 'Inbound lead qualification',
+          description:
+            'Prospects from the website are captured and read by Claude, which scores each lead on fit and intent and summarizes what they want. Qualified leads reach the team with context already attached. Low-fit enquiries are filtered out, so the team spends its time on real opportunities.',
+        },
+        {
+          title: 'Automatic invoice generation',
+          description:
+            "When a client's order is delivered, the system creates the invoice from the order record, including items, quantities, pricing, and client details. No one re-enters data. Invoices are produced consistently and on time, which keeps cash moving.",
+        },
+        {
+          title: 'Human review with in-app notifications',
+          description:
+            "Claude's output is not sent blindly. Leads or invoices that are unusual, incomplete, or above a set threshold are flagged for review, and the right person gets a notification in the app. They approve, edit, or reject in one place. Automation handles routine work and people handle exceptions.",
+        },
+        {
+          title: 'One connected revenue system',
+          description:
+            'Leads, orders, deliveries, and invoices live in one app instead of scattered sheets and tools. Each stage feeds the next, so a qualified lead becomes an order, a delivered order becomes an invoice, and the team sees the whole pipeline in one view.',
+        },
+      ],
+    },
+    businessImpact: {
+      intro:
+        'With the system live, the manufacturer handles more than 1,000 leads and 100+ invoices a month without adding headcount. The team now spends its time on operations and growth instead of data entry.',
+      cards: [
+        {
+          title: '160 hours saved every month',
+          description:
+            'Lead sorting and invoicing used to take about 40 hours a week. Automation now handles it, freeing around 160 hours a month. That time moved to operations, production planning, and customer relationships.',
+          icon: 'clock',
+        },
+        {
+          title: 'About $14,400 saved a year',
+          description:
+            'The time saved is worth roughly $1,200 (₹1 lakh) a month in cost, or about $14,400 (₹12 lakh) a year, and the saving grows as volume grows. Revenue can scale without a matching rise in admin cost.',
+          icon: 'globe',
+        },
+        {
+          title: 'Built to scale, with a roadmap',
+          description:
+            'The business can now take on more leads and orders without the process breaking. Next steps could include automated payment reminders, reorder prompts for repeat customers, revenue reporting dashboards, and extending the system to purchasing and supplier management.',
+          icon: 'users',
+        },
+      ],
+    },
+    testimonials: [
+      {
+        quote:
+          'We used to spend our week chasing leads and creating invoices. Now the system does the routine work and we step in only when it matters. We can finally focus on running and growing the business.',
+        author: 'Vinay',
+        role: 'Operations Lead',
+        company: 'Shadowfax',
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+      },
+    ],
+    relatedSlugs: [
+      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent-with-claude',
+      'global-inspection-company-automates-order-processing-for-9-business-lines-with-claude',
+    ],
+    contactLead: {
+      name: 'Maddy',
+      role: 'Principal AI Architect',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+      phone: '+1 (858) 529-5660',
+      description: 'Creating a tech product roadmap and building scalable apps for your organization.',
+    },
+  },
+  {
     id: 'cs-1',
     slug: 'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds-with-claude',
     title: 'Real estate marketing platform turns listing data into case studies in seconds with Claude',
@@ -1361,6 +1491,7 @@ export const CASE_STUDY_OFFERINGS = [
 
 export const CASE_STUDY_INDUSTRIES = [
   'All Industries',
+  'Manufacturing',
   'Real Estate',
   'Testing & Inspection',
   'Sports Technology',
