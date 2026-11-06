@@ -77,12 +77,12 @@ export interface CaseStudyItem {
 
 export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   {
-    id: '3d-toy-manufacturer-scales-revenue-operations-saving-160-hours-a-month-with-claude',
-    slug: '3d-toy-manufacturer-scales-revenue-operations-saving-160-hours-a-month-with-claude',
-    title: '3D Toy Manufacturer Scales Revenue Operations, Saving 160 Hours a Month with Claude',
+    id: '3d-toy-manufacturer-scales-revenue-operations-saving-160-hours-a-month',
+    slug: '3d-toy-manufacturer-scales-revenue-operations-saving-160-hours-a-month',
+    title: '3D Toy Manufacturer Scales Revenue Operations, Saving 160 Hours a Month',
     excerpt:
-      'Built a revenue operations app for a 3D toy manufacturer on Claude, qualifying inbound leads, routing them automatically, and generating delivery invoices while saving 160 hours monthly.',
-    categoryTags: ['Manufacturing', 'Revenue Operations', 'Claude AI'],
+      'Built an automated revenue operations platform for a 3D toy manufacturer, qualifying inbound leads, routing them automatically, and generating delivery invoices while saving 160 hours monthly.',
+    categoryTags: ['Manufacturing', 'Revenue Operations', 'Agentic AI'],
     offering: 'AI/ML Engineering',
     industry: 'Manufacturing',
     image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
@@ -136,12 +136,12 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        "We built a multi-revenue operations app on Claude, integrated server-side through Anthropic's Python SDK. One system covers the full revenue cycle. It qualifies inbound leads from the web and, once a product is delivered, generates the invoice automatically. A shared layer underneath handles validation, review, and notifications, so the team only steps in where judgment is needed.",
+        "We built an enterprise multi-revenue operations platform, integrated server-side through high-performance Python services. One system covers the full revenue cycle. It qualifies inbound leads from the web and, once a product is delivered, generates the invoice automatically. A shared layer underneath handles validation, review, and notifications, so the team only steps in where judgment is needed.",
       cards: [
         {
           title: 'Inbound lead qualification',
           description:
-            'Prospects from the website are captured and read by Claude, which scores each lead on fit and intent and summarizes what they want. Qualified leads reach the team with context already attached. Low-fit enquiries are filtered out, so the team spends its time on real opportunities.',
+            'Prospects from the website are captured and analyzed by intelligent agents, which score each lead on fit and intent and summarize what they want. Qualified leads reach the team with context already attached. Low-fit enquiries are filtered out, so the team spends its time on real opportunities.',
         },
         {
           title: 'Automatic invoice generation',
@@ -151,7 +151,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
         {
           title: 'Human review with in-app notifications',
           description:
-            "Claude's output is not sent blindly. Leads or invoices that are unusual, incomplete, or above a set threshold are flagged for review, and the right person gets a notification in the app. They approve, edit, or reject in one place. Automation handles routine work and people handle exceptions.",
+            "AI generated output is not sent blindly. Leads or invoices that are unusual, incomplete, or above a set threshold are flagged for review, and the right person gets a notification in the app. They approve, edit, or reject in one place. Automation handles routine work and people handle exceptions.",
         },
         {
           title: 'One connected revenue system',
@@ -195,8 +195,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent-with-claude',
-      'global-inspection-company-automates-order-processing-for-9-business-lines-with-claude',
+      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent',
+      'global-inspection-company-automates-order-processing-for-9-business-lines',
     ],
     contactLead: {
       name: 'Maddy',
@@ -208,8 +208,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   },
   {
     id: 'cs-1',
-    slug: 'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds-with-claude',
-    title: 'Real estate marketing platform turns listing data into case studies in seconds with Claude',
+    slug: 'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds',
+    title: 'Real estate marketing platform turns listing data into case studies in seconds',
     excerpt:
       'We helped a real estate marketing platform turn sold listings into publish-ready case studies and social posts, with more than 6,000 generated across 50+ brokerages.',
     categoryTags: ['Digital natives', 'AI/ML Engineering', 'Product Engineering'],
@@ -237,7 +237,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       clientName: 'Testimonial Tree, Inc.',
       industry: 'Real estate technology',
       companySize: 'Small',
-      product: 'Claude Sonnet 4.6',
+      product: 'Multimodal Foundation Models & Vision AI',
       location: 'Florida, United States',
       description:
         'Testimonial Tree builds reputation and marketing software for residential real estate agents, teams, and brokerages. Its KeyStory product turns closed deals and client reviews into ready-to-publish marketing, including property case studies, social posts, and embeddable review widgets.',
@@ -266,12 +266,12 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        "Simform built KeyStory's AI capabilities on Claude Sonnet 4.6 and integrated it server-side through Anthropic's Python SDK. One model writes the copy, reads the photos, extracts the brand, and powers the in-app assistant. A shared layer beneath all four handles the guardrails, keeps each tenant's data separate, and tracks cost per call. Because Claude reads the listing's actual photos alongside its facts, the writing describes the specific home that sold.",
+        "Simform built KeyStory's AI capabilities on multimodal foundation models and integrated them server-side through resilient microservices. One model writes the copy, reads the photos, extracts the brand, and powers the in-app assistant. A shared layer beneath all four handles the guardrails, keeps each tenant's data separate, and tracks cost per call. Because the multimodal models analyze the listing's actual photos alongside its facts, the writing describes the specific home that sold.",
       cards: [
         {
           title: 'Listing data and photos in one call',
           description:
-            "When a real estate agent selects a sold listing, KeyStory pulls its details from the platform's own database and calls the MLS API only as a fallback, fetching photos, market statistics, and community data in parallel. Claude receives these facts, plus up to six property photos, in one call and writes each section in the agent's first-person voice. A companion call reads the agent's website or logo and extracts brand colors and typography, so the page matches their identity.",
+            "When a real estate agent selects a sold listing, KeyStory pulls its details from the platform's own database and calls the MLS API only as a fallback, fetching photos, market statistics, and community data in parallel. The multimodal engine receives these facts, plus up to six property photos, in one call and writes each section in the agent's first-person voice. A companion call reads the agent's website or logo and extracts brand colors and typography, so the page matches their identity.",
         },
         {
           title: 'Exact-value rules with automatic retries',
@@ -281,7 +281,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
         {
           title: 'A voice registry and vision-based photo ranking',
           description:
-            "A central registry holds each network's voice, slide limits, and hashtag rules. Claude uses it to generate the caption, hashtags, and slide plan for Facebook, Instagram, and LinkedIn in one call, and agents can regenerate a single caption or slide on its own. In a separate vision call at zero temperature, Claude scores each listing photo, labels what it shows, and marks where overlay text can sit, producing the same ranking on every run.",
+            "A central registry holds each network's voice, slide limits, and hashtag rules. The AI engine uses it to generate the caption, hashtags, and slide plan for Facebook, Instagram, and LinkedIn in one call, and agents can regenerate a single caption or slide on its own. In a separate vision step at zero temperature, the multimodal model scores each listing photo, labels what it shows, and marks where overlay text can sit, producing the same ranking on every run.",
         },
         {
           title: 'Anthropic-hosted web search and fetch',
@@ -292,7 +292,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     businessImpact: {
       intro:
-        'With the Claude-powered capabilities live across more than 100 tenant organizations, a closed deal now becomes a case study, platform-ready social posts, and brand-matched widgets, without the manual work that kept most agents from starting.',
+        'With AI-powered capabilities live across more than 100 tenant organizations, a closed deal now becomes a case study, platform-ready social posts, and brand-matched widgets, without the manual work that kept most agents from starting.',
       cards: [
         {
           icon: 'clock',
@@ -333,8 +333,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent-with-claude',
-      'global-inspection-company-automates-order-processing-for-9-business-lines-with-claude',
+      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent',
+      'global-inspection-company-automates-order-processing-for-9-business-lines',
     ],
     contactLead: {
       name: 'Hiren Dhaduk',
@@ -346,8 +346,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   },
   {
     id: 'cs-2',
-    slug: 'global-inspection-company-automates-order-processing-for-9-business-lines-with-claude',
-    title: 'Global Inspection Company Automates Order Processing for 9 Business Lines with Claude',
+    slug: 'global-inspection-company-automates-order-processing-for-9-business-lines',
+    title: 'Global Inspection Company Automates Order Processing for 9 Business Lines',
     excerpt:
       'We helped a global testing, inspection, and certification company automate request processing across nine lines of business and reduce manual effort in preparing ERP actions.',
     categoryTags: ['Digital natives', 'AI/ML Engineering', 'Data Engineering'],
@@ -356,7 +356,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=80',
     heroBadge: 'Digital natives',
     heroSubheadline:
-      'Engineered an enterprise multimodal extraction and validation engine powered by Claude Sonnet, transforming unstructured client certification requests into validated ERP work orders in seconds.',
+      'Engineered an enterprise multimodal extraction and validation engine, transforming unstructured client certification requests into validated ERP work orders in seconds.',
     metrics: [
       {
         value: '9',
@@ -375,7 +375,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       clientName: 'EuroLab Global Testing Services',
       industry: 'Testing, inspection & certification',
       companySize: 'Enterprise (10,000+ employees)',
-      product: 'Claude 3.5 Sonnet & SAP ERP',
+      product: 'Multimodal Document AI & SAP ERP',
       location: 'Geneva, Switzerland',
       description:
         'EuroLab provides world-class quality verification, industrial audits, and materials certification across automotive, consumer electronics, chemical, and aerospace industries worldwide.',
@@ -404,12 +404,12 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        'Simform designed a high-throughput document intelligence gateway with Claude Sonnet that automatically parses technical certificates, cross-validates testing methods with ISO libraries, and writes formatted actions directly into SAP ERP.',
+        'Simform designed a high-throughput document intelligence gateway with multimodal AI that automatically parses technical certificates, cross-validates testing methods with ISO libraries, and writes formatted actions directly into SAP ERP.',
       cards: [
         {
           title: 'Multimodal document digestion',
           description:
-            'Claude processes complex tables, technical schematics, and chemical formulations in parallel, extracting over 70 parameters per document with strict schema constraints.',
+            'Multimodal Document AI processes complex tables, technical schematics, and chemical formulations in parallel, extracting over 70 parameters per document with strict schema constraints.',
         },
         {
           title: 'Automated compliance rule validation',
@@ -463,7 +463,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds-with-claude',
+      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds',
       'vending-operations-provider-cuts-stockouts-30-percent-with-unified-data-platform-on-databricks',
     ],
     contactLead: {
@@ -476,17 +476,17 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   },
   {
     id: 'cs-3',
-    slug: 'sports-technology-company-accelerates-multi-tenant-saas-development-with-claude',
-    title: 'Sports technology company accelerates multi-tenant SaaS development with Claude',
+    slug: 'sports-technology-company-accelerates-multi-tenant-saas-development',
+    title: 'Sports technology company accelerates multi-tenant SaaS development',
     excerpt:
-      'We helped a sports technology company build a multi-tenant sports camp management platform with Claude embedded across the SDLC, accelerating feature delivery, reducing regression effort, and improving engineering productivity.',
+      'We helped a sports technology company build a multi-tenant sports camp management platform with AI embedded across the SDLC, accelerating feature delivery, reducing regression effort, and improving engineering productivity.',
     categoryTags: ['Digital natives', 'AI/ML Engineering', 'Product Engineering'],
     offering: 'Product Engineering',
     industry: 'Sports Technology',
     image: 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1200&q=80',
     heroBadge: 'Digital natives',
     heroSubheadline:
-      'Architected a next-generation multi-tenant sports camp and athlete analytics platform, integrating Claude to generate personalized drill sequences and automate tournament scheduling.',
+      'Architected a next-generation multi-tenant sports camp and athlete analytics platform, integrating AI constraint engines to generate personalized drill sequences and automate tournament scheduling.',
     metrics: [
       {
         value: '3.5x',
@@ -505,7 +505,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       clientName: 'Apex Athlete Systems',
       industry: 'Sports tech & camp logistics',
       companySize: 'Growth SaaS',
-      product: 'Next.js, Python, Claude 3.5 Sonnet',
+      product: 'Next.js, Python, Intelligent AI Solvers',
       location: 'Austin, Texas',
       description:
         'Apex Athlete Systems delivers athletic tournament scheduling, player metric tracking, and camp communication tools for collegiate athletic programs and youth sports academies.',
@@ -534,12 +534,12 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        'Simform engineered a modular micro-frontend SaaS platform on AWS with Claude-powered intelligent constraint solvers that generate conflict-free brackets in seconds and craft personalized training drills.',
+        'Simform engineered a modular micro-frontend SaaS platform on AWS with intelligent constraint solvers that generate conflict-free brackets in seconds and craft personalized training drills.',
       cards: [
         {
           title: 'Automated tournament constraint solver',
           description:
-            'Claude ingests team rankings, field lights schedules, and referee travel constraints to generate optimized tournament brackets with zero collisions.',
+            'The constraint engine ingests team rankings, field lights schedules, and referee travel constraints to generate optimized tournament brackets with zero collisions.',
         },
         {
           title: 'Adaptive player development copilot',
@@ -593,7 +593,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds-with-claude',
+      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds',
       'hvac-subsidiary-cuts-reporting-time-by-80-percent-with-azure-ai-field-agents',
     ],
     contactLead: {
@@ -723,7 +723,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'global-inspection-company-automates-order-processing-for-9-business-lines-with-claude',
+      'global-inspection-company-automates-order-processing-for-9-business-lines',
       'hvac-subsidiary-cuts-reporting-time-by-80-percent-with-azure-ai-field-agents',
     ],
     contactLead: {
@@ -736,8 +736,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   },
   {
     id: 'cs-5',
-    slug: 'student-credit-platform-cuts-manual-transcript-entry-by-99-percent-with-claude',
-    title: 'Student Credit Platform Cuts Manual Transcript Entry by 99% with Claude',
+    slug: 'student-credit-platform-cuts-manual-transcript-entry-by-99-percent',
+    title: 'Student Credit Platform Cuts Manual Transcript Entry by 99%',
     excerpt:
       'We helped a student credit management platform automate transcript extraction and eliminate manual data entry across every school layout it serves.',
     categoryTags: ['Digital natives', 'Migration and Modernization', 'ML and Data Science'],
@@ -746,7 +746,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80',
     heroBadge: 'Digital natives',
     heroSubheadline:
-      'Rebuilt an academic credit evaluation pipeline with Claude 3.5 Sonnet, automating the ingestion of complex high school and university transcripts with near-100% precision.',
+      'Rebuilt an academic credit evaluation pipeline with multimodal Document AI, automating the ingestion of complex high school and university transcripts with near-100% precision.',
     metrics: [
       {
         value: '99%',
@@ -765,7 +765,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       clientName: 'EduCredit Exchange',
       industry: 'Higher education & admissions tech',
       companySize: 'Growth',
-      product: 'Claude 3.5 Sonnet, AWS Lambda, DynamoDB',
+      product: 'Multimodal Document AI, AWS Lambda, DynamoDB',
       location: 'Boston, Massachusetts',
       description:
         'EduCredit Exchange streamlines transfer credit evaluations for universities and community colleges, ensuring students receive accurate credits for prior coursework.',
@@ -794,12 +794,12 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        'Simform designed a zero-shot multimodal transcript reasoning pipeline using Claude Sonnet that understands tabular course data, converts credit units, and calculates standardized GPA benchmarks automatically.',
+        'Simform designed a zero-shot multimodal transcript reasoning pipeline using Document AI that understands tabular course data, converts credit units, and calculates standardized GPA benchmarks automatically.',
       cards: [
         {
           title: 'Multimodal layout-agnostic visual parsing',
           description:
-            'Claude reads scanned PDFs, photo uploads, and electronic transcripts regardless of watermarks, skewed scans, or unusual table structures.',
+            'Multimodal vision models read scanned PDFs, photo uploads, and electronic transcripts regardless of watermarks, skewed scans, or unusual table structures.',
         },
         {
           title: 'Automated course equivalence mapping',
@@ -853,8 +853,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds-with-claude',
-      'sports-technology-company-accelerates-multi-tenant-saas-development-with-claude',
+      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds',
+      'sports-technology-company-accelerates-multi-tenant-saas-development',
     ],
     contactLead: {
       name: 'Hiren Dhaduk',
@@ -983,7 +983,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds-with-claude',
+      'real-estate-marketing-platform-turns-listing-data-into-case-studies-in-seconds',
       'vending-operations-provider-cuts-stockouts-30-percent-with-unified-data-platform-on-databricks',
     ],
     contactLead: {
@@ -995,11 +995,11 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
   },
   {
-    id: 'healthcare-ai-platform-streamlines-clinical-documentation-with-claude',
-    slug: 'healthcare-ai-platform-streamlines-clinical-documentation-with-claude',
-    title: 'Healthcare AI Platform Streamlines Clinical Documentation with Claude',
+    id: 'healthcare-ai-platform-streamlines-clinical-documentation',
+    slug: 'healthcare-ai-platform-streamlines-clinical-documentation',
+    title: 'Healthcare AI Platform Streamlines Clinical Documentation',
     excerpt:
-      'We helped a premier digital health network build an ambient clinical intelligence engine with Claude, reducing physician charting overhead by 82% across 350+ medical clinics.',
+      'We helped a premier digital health network build an ambient clinical intelligence engine, reducing physician charting overhead by 82% across 350+ medical clinics.',
     categoryTags: ['Healthcare & Life Sciences', 'Agentic AI', 'AI/ML Engineering'],
     offering: 'Agentic AI',
     industry: 'Healthcare & Life Sciences',
@@ -1045,7 +1045,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        'SpotXpert engineered a real-time speech processing and agentic structuring pipeline powered by Claude 3.5 Sonnet and secure private cloud enclaves.',
+        'SpotXpert engineered a real-time speech processing and agentic structuring pipeline powered by enterprise clinical foundation models and secure private cloud enclaves.',
       cards: [
         {
           title: 'Dual-Channel Audio Separation',
@@ -1053,7 +1053,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
             'Developed an on-device noise reduction and speaker diarization system that distinguishes between physician recommendations and patient symptom descriptions.',
         },
         {
-          title: 'Claude Clinical Reasoning Agent',
+          title: 'Clinical Reasoning Agent',
           description:
             'Constructed a specialized prompt graph that extracts clinical entities, verifies medication dosage guidelines, and formats SOAP notes matching specialty templates.',
         },
@@ -1096,7 +1096,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     testimonials: [
       {
         quote:
-          'SpotXpert gave us our personal lives back. I no longer bring a laptop to the dinner table to finish clinical notes. The accuracy of Claude capturing my patient conversations is simply astonishing.',
+          'SpotXpert gave us our personal lives back. I no longer bring a laptop to the dinner table to finish clinical notes. The accuracy of the ambient AI capturing my patient conversations is simply astonishing.',
         author: 'Dr. Evelyn Vance, MD',
         role: 'Chief Medical Officer',
         company: 'AuraHealth Intelligence',
@@ -1104,8 +1104,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
       },
     ],
     relatedSlugs: [
-      'global-inspection-company-automates-order-processing-for-9-business-lines-with-claude',
-      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent-with-claude',
+      'global-inspection-company-automates-order-processing-for-9-business-lines',
+      'student-credit-platform-cuts-manual-transcript-entry-by-99-percent',
     ],
     contactLead: {
       name: 'Hiren Dhaduk',
@@ -1226,7 +1226,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     ],
     relatedSlugs: [
       'vending-operations-provider-cuts-stockouts-30-percent-with-unified-data-platform-on-databricks',
-      'sports-technology-company-accelerates-multi-tenant-saas-development-with-claude',
+      'sports-technology-company-accelerates-multi-tenant-saas-development',
     ],
     contactLead: {
       name: 'Hiren Dhaduk',
@@ -1237,11 +1237,11 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
   },
   {
-    id: 'autonomous-supply-chain-network-cuts-freight-costs-22-percent-with-claude',
-    slug: 'autonomous-supply-chain-network-cuts-freight-costs-22-percent-with-claude',
-    title: 'Autonomous Supply Chain Network Cuts Freight Costs 22% with Claude',
+    id: 'autonomous-supply-chain-network-cuts-freight-costs-22-percent',
+    slug: 'autonomous-supply-chain-network-cuts-freight-costs-22-percent',
+    title: 'Autonomous Supply Chain Network Cuts Freight Costs 22%',
     excerpt:
-      'We helped a North American freight logistics platform build an agentic route dispatch and rate negotiation assistant with Claude, optimizing 4.5M shipments daily.',
+      'We helped a North American freight logistics platform build an agentic route dispatch and rate negotiation assistant, optimizing 4.5M shipments daily.',
     categoryTags: ['Retail & Logistics', 'Agentic AI', 'AI/ML Engineering'],
     offering: 'AI/ML Engineering',
     industry: 'Retail & Logistics',
@@ -1287,12 +1287,12 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     },
     solution: {
       intro:
-        'SpotXpert developed a multi-agent dispatch system powered by Claude that acts as an always-on procurement co-pilot for logistics coordinators.',
+        'SpotXpert developed a multi-agent dispatch system that acts as an always-on procurement co-pilot for logistics coordinators.',
       cards: [
         {
           title: 'Carrier Negotiation Agent',
           description:
-            'Deployed Claude-powered conversational agents that communicate with carriers over email and portal chat to negotiate competitive rates within predetermined budget bands.',
+            'Deployed autonomous conversational agents that communicate with carriers over email and portal chat to negotiate competitive rates within predetermined budget bands.',
         },
         {
           title: 'Dynamic Multi-Stop Route Optimizer',
@@ -1509,12 +1509,16 @@ export function getAllCaseStudies(): CaseStudyItem[] {
 export function getCaseStudyBySlug(slug: string): CaseStudyItem | undefined {
   if (!slug) return undefined;
   const normalized = slug.toLowerCase().trim();
+  const strippedClaude = normalized.replace(/-with-claude$/i, '');
   return (
     CASE_STUDIES_DATA.find((item) => item.slug === normalized) ||
+    CASE_STUDIES_DATA.find((item) => item.slug === strippedClaude) ||
     CASE_STUDIES_DATA.find(
       (item) =>
         item.slug.replace(/-percent/g, '%') === normalized ||
-        item.slug.replace(/%/g, '-percent') === normalized
+        item.slug.replace(/%/g, '-percent') === normalized ||
+        item.slug.replace(/-percent/g, '%') === strippedClaude ||
+        item.slug.replace(/%/g, '-percent') === strippedClaude
     )
   );
 }
