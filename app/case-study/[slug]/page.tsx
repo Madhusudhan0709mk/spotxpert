@@ -166,60 +166,7 @@ export default async function CaseStudyDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 2. Client Overview Section */}
-      <section className="py-16 sm:py-24 bg-[#F2F2F2]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Left: Metadata list & narrative */}
-            <div className="lg:col-span-6">
-              <h2 className="text-3xl font-extrabold text-[#0E4032] mb-6">
-                Client Overview
-              </h2>
 
-              <div className="space-y-3 mb-6 text-sm text-[#0E4032]">
-                <div className="flex items-start">
-                  <span className="font-bold text-[#0E4032] w-32 flex-shrink-0">Client:</span>
-                  <span className="text-[#0E4032]/80 font-medium">{study.clientOverview.clientName}</span>
-                </div>
-                <div className="flex items-start">
-                  <span className="font-bold text-[#0E4032] w-32 flex-shrink-0">Industry:</span>
-                  <span className="text-[#0E4032]/80 font-medium">{study.clientOverview.industry}</span>
-                </div>
-                <div className="flex items-start">
-                  <span className="font-bold text-[#0E4032] w-32 flex-shrink-0">Company size:</span>
-                  <span className="text-[#0E4032]/80 font-medium">{study.clientOverview.companySize}</span>
-                </div>
-                <div className="flex items-start">
-                  <span className="font-bold text-[#0E4032] w-32 flex-shrink-0">Product:</span>
-                  <span className="text-[#0E4032]/80 font-medium">{study.clientOverview.product}</span>
-                </div>
-                <div className="flex items-start">
-                  <span className="font-bold text-[#0E4032] w-32 flex-shrink-0">Location:</span>
-                  <span className="text-[#0E4032]/80 font-medium">{study.clientOverview.location}</span>
-                </div>
-              </div>
-
-              <p className="text-sm sm:text-base text-[#0E4032]/85 leading-relaxed font-normal">
-                {study.clientOverview.description}
-              </p>
-            </div>
-
-            {/* Right: Dashboard Mockup Image */}
-            <div className="lg:col-span-6">
-              <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-white shadow-xl border border-[#B4D9C4]">
-                <Image
-                  src={study.clientOverview.dashboardImage}
-                  alt={`${study.clientOverview.clientName} product overview`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 3. Challenges Section */}
       <section className="py-16 sm:py-24 bg-[#0E4032] text-white">
@@ -327,70 +274,6 @@ export default async function CaseStudyDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 6. Trusted by the World's Leading Companies */}
-      <section className="py-16 sm:py-24 bg-[#F2F2F2]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0E4032] text-center mb-10">
-            Trusted by the World&apos;s Leading Companies
-          </h2>
-
-          {/* Client Logos Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mb-12">
-            {[
-              { name: 'Bank of America', label: 'BANK OF AMERICA' },
-              { name: 'American Airlines', label: 'American' },
-              { name: 'Mitsubishi Electric', label: 'MITSUBISHI ELECTRIC' },
-              { name: 'Renesas', label: 'RENESAS' },
-              { name: 'Fujifilm', label: 'FUJIFILM' },
-              { name: 'Hyundai Glovis', label: 'HYUNDAI GLOVIS' },
-            ].map((company) => (
-              <div
-                key={company.name}
-                className="bg-white border border-[#B4D9C4] rounded-xl h-16 flex items-center justify-center p-3 text-center shadow-2xs hover:border-[#33A685] transition-colors"
-              >
-                <span className="font-bold text-xs tracking-wider text-[#0E4032] uppercase">
-                  {company.label}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* Testimonial Cards Carousel */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {study.testimonials.map((testimonial, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-[#B4D9C4] rounded-2xl p-6 sm:p-8 shadow-xs flex flex-col justify-between"
-              >
-                <p className="text-xs sm:text-sm text-[#0E4032]/90 leading-relaxed italic mb-6">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-
-                <div className="flex items-center gap-3 pt-4 border-t border-[#B4D9C4]/50">
-                  <div className="relative w-10 h-10 rounded-full overflow-hidden bg-[#E8F5F0] border border-[#33A685]/30 flex-shrink-0">
-                    <Image
-                      src={testimonial.avatar}
-                      alt={testimonial.author}
-                      fill
-                      className="object-cover"
-                      sizes="40px"
-                      referrerPolicy="no-referrer"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#0E4032]">
-                      {testimonial.author}
-                    </div>
-                    <div className="text-xs text-[#33A685] font-semibold">
-                      {testimonial.role}, {testimonial.company}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 7. Related Case Studies */}
       <section className="py-16 sm:py-24 bg-[#082820] text-white">

@@ -42,7 +42,6 @@ import {
   ChevronRight,
   ArrowUpRight,
   Video,
-  ArrowRight,
 } from 'lucide-react';
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -155,19 +154,21 @@ export default function ServicesMegaMenu({
                   </button>
                 );
               })}
-              <div className="pt-2 mt-2 border-t border-[#33A685]/30">
-                <Link
-                  href="/services/video-services"
-                  onClick={onClose}
-                  className="w-full text-left px-3.5 py-2.5 rounded-xl transition-all cursor-pointer flex items-center justify-between group bg-[#0d3b2e] hover:bg-[#155442] text-[#F2E6A7] border border-[#33A685]/60 shadow-sm"
-                >
-                  <div className="flex items-center gap-2">
-                    <Video className="w-4 h-4 text-[#42CF9F]" />
-                    <span className="text-[13px] font-semibold text-white group-hover:text-[#F2E6A7]">Video Services</span>
+
+              {/* Video Services Page Navigation Link */}
+              <Link
+                href="/services/video-services"
+                onClick={onClose}
+                className="w-full text-left px-3.5 py-3 rounded-xl transition-all cursor-pointer flex items-center justify-between group text-[#B4D9C4] hover:text-[#F2E6A7] hover:bg-[#124b3b]/60"
+              >
+                <div className="pr-2">
+                  <div className="text-[13px] font-semibold group-hover:text-[#F2E6A7] transition-colors flex items-center gap-2">
+                    <Video className="w-4 h-4 text-[#42CF9F] group-hover:text-[#F2E6A7] transition-colors" />
+                    <span>Video Services</span>
                   </div>
-                  <span className="text-[10px] bg-[#33A685] text-white px-1.5 py-0.5 rounded font-bold">New</span>
-                </Link>
-              </div>
+                </div>
+                <ChevronRight className="w-4 h-4 flex-shrink-0 text-white/40 group-hover:text-[#F2E6A7] group-hover:translate-x-0.5 transition-transform" />
+              </Link>
             </div>
           </div>
 
@@ -200,30 +201,6 @@ export default function ServicesMegaMenu({
               })}
             </div>
           </div>
-        </div>
-
-        {/* Mega Menu Footer Navigation Bar */}
-        <div className="border-t border-[#33A685]/40 bg-[#082a20] px-5 py-3 flex items-center justify-between text-xs">
-          <Link
-            href="/services/video-services"
-            onClick={onClose}
-            className="inline-flex items-center gap-2 text-[#F2E6A7] hover:text-white font-semibold transition-colors group"
-          >
-            <div className="w-6 h-6 rounded bg-[#33A685]/20 border border-[#33A685]/50 flex items-center justify-center text-[#42CF9F] group-hover:bg-[#33A685] group-hover:text-white transition-colors">
-              <Video className="w-3.5 h-3.5" />
-            </div>
-            <span>Video Services &amp; Architecture Demos</span>
-            <span className="text-[10px] bg-[#33A685] text-white px-2 py-0.5 rounded-full font-bold">Watch Teardowns</span>
-          </Link>
-
-          <Link
-            href="/services"
-            onClick={onClose}
-            className="text-[#42CF9F] hover:text-[#F2E6A7] font-semibold transition-colors flex items-center gap-1"
-          >
-            <span>Explore All 32 Services</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
   ChevronDown,
+  ChevronRight,
   Menu,
   X,
   Sparkles, 
@@ -147,24 +148,7 @@ const navItems = [
     ]
   },
   */
-  {
-    label: 'Resources',
-    id: 'resources',
-    featured: {
-      title: 'Engineering Insights',
-      desc: 'Deep dives, architectural blueprints, and industry benchmarks.',
-      tag: 'Latest'
-    },
-    columns: [
-      {
-        title: 'Knowledge Base',
-        links: [
-          { name: 'Client Case Studies', desc: 'Measurable enterprise ROI stories', icon: Briefcase, href: '/case-study' },
-          { name: 'Engineering Blog', desc: 'In-depth technical architecture articles', icon: BookOpen, href: '/resources/blog' },
-        ]
-      }
-    ]
-  },
+
   /*
   {
     label: 'Why SpotXpert AI',
@@ -434,13 +418,13 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
                       <Link
                         href="/services/video-services"
                         onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center justify-between text-[13px] font-semibold text-[#F2E6A7] bg-[#082a20] hover:bg-[#124b3b] p-2.5 rounded-xl border border-[#33A685]/60 transition-colors"
+                        className="flex items-center justify-between text-[13px] font-semibold text-[#B4D9C4] hover:text-[#F2E6A7] p-2.5 rounded-xl bg-[#082a20]/60 border border-[#33A685]/30 transition-colors"
                       >
                         <span className="flex items-center gap-2">
                           <Video className="w-4 h-4 text-[#42CF9F]" />
-                          <span>Video Services &amp; Architecture Demos</span>
+                          <span>Video Services</span>
                         </span>
-                        <span className="text-[10px] bg-[#33A685] text-white px-1.5 py-0.5 rounded font-bold">New</span>
+                        <ChevronRight className="w-4 h-4 text-[#B4D9C4]" />
                       </Link>
                       {SERVICE_CATEGORIES.map((cat) => {
                         const isCatOpen = mobileCategoryOpen === cat.key;
